@@ -94,6 +94,7 @@ class Assassination {
                     else if (selectedPlayers.length === 2) {
                         const i0 = usernamesIndexes.getIndexFromUsername(this.thisRoom.playersInGame, selectedPlayers[0]);
                         const i1 = usernamesIndexes.getIndexFromUsername(this.thisRoom.playersInGame, selectedPlayers[1]);
+                        alert("You have selected two players: this will be a lovers shot rather than a Merlin shot.");
                         // Check the alliance of the target. If they are spy, reject it and ask them to shoot a res.
                         // Note: Allowed to shoot Oberon
                         if (this.thisRoom.playersInGame[i0].alliance === 'Spy'
